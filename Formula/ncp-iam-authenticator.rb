@@ -16,8 +16,8 @@ class NcpIamAuthenticator < Formula
 
   def install
     ldflags = ["-s", "-w",
-               "-X github.com/NaverCloudPlatform/ncp-iam-authenticator/cmd.Version=#{version}"]
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/ncp-iam-authenticator"
+               "-X github.com/NaverCloudPlatform/ncp-iam-authenticator/cmd.version=#{version}"]
+    system "go", "build", *std_go_args(ldflags: ldflags), "./main.go"
     prefix.install_metafiles
   end
 
