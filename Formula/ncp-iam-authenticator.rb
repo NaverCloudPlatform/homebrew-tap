@@ -2,8 +2,8 @@ class NcpIamAuthenticator < Formula
   desc "NaverCloudPlatform Kubernetes Service Authenticator CLI for IAM Authentication"
   homepage "https://github.com/NaverCloudPlatform/ncp-iam-authenticator"
   url "https://github.com/NaverCloudPlatform/ncp-iam-authenticator.git",
-      tag:      "v1.0.6",
-      revision: "526e16eeca7f8630a85f14f19701a1bc2ef17450"
+      tag:      "v1.1.0",
+      revision: "2893ae6ac5bcc68a9b09df77786cad0471088347"
   license "Apache-2.0"
   head "https://github.com/NaverCloudPlatform/ncp-iam-authenticator.git", branch: "main"
 
