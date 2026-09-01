@@ -2,8 +2,8 @@ class NcpIamAuthenticator < Formula
   desc "NaverCloudPlatform Kubernetes Service Authenticator CLI for IAM Authentication"
   homepage "https://github.com/NaverCloudPlatform/ncp-iam-authenticator"
   url "https://github.com/NaverCloudPlatform/ncp-iam-authenticator.git",
-      tag:      "v1.1.1",
-      revision: "ed1936e6d15703c0f5b3d7d8e56b0660e0c22da0"
+      tag:      "v1.2.0",
+      revision: "e9eceac5865c616e2e4e0690a7efb759a65020be"
   license "Apache-2.0"
   head "https://github.com/NaverCloudPlatform/ncp-iam-authenticator.git", branch: "main"
 
@@ -23,6 +23,6 @@ class NcpIamAuthenticator < Formula
 
   test do
     output = shell_output("#{bin}/ncp-iam-authenticator version")
-    assert_match %Q("v#{version}"), output
+    assert_match version.to_s, output
   end
 end
